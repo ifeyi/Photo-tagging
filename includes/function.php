@@ -34,10 +34,13 @@ function db_connect(){
 //Connect to mysql server
 db_connect();
 
-//Set up an array to store details from database
-$list_tags = array();
+
+
 
 function get_results() {
+
+  //Set up an array to store details from database	
+  $list_tags = array();
   //Query the DB
   $qry = " SELECT id, title, x1, y1, x2, y2, width, height FROM phototags ";
 
