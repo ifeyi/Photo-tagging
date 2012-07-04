@@ -64,12 +64,12 @@ Credits: jQuery, imgAreaSelect
       	<form method="post" action="includes/function.php">
       		<!-- Grab the X/Y/Width/Height we dont need x2 & y2, but will capture them anyway -->
       		<fieldset>
-        		<input type="hidden" name="x1" id="x1" value="<?php echo $x1; ?>" />
-        		<input type="hidden" name="y1" id="y1" value="<?php echo $y1; ?>" />
-        		<input type="hidden" name="x2" id="x2" value="<?php echo $x2; ?>" />
-        		<input type="hidden" name="y2" id="y2" value="<?php echo $y2; ?>" />
-        		<input type="hidden" name="w" id="w" value="<?php echo $w; ?>" />
-        		<input type="hidden" name="h" id="h" value="<?php echo $h; ?>" />
+        		<input type="hidden" name="x1" id="x1" value="<?php if(isset($x1)) echo $x1; ?>" />
+        		<input type="hidden" name="y1" id="y1" value="<?php if(isset($x2)) echo $y1; ?>" />
+        		<input type="hidden" name="x2" id="x2" value="<?php if(isset($y1)) echo $x2; ?>" />
+        		<input type="hidden" name="y2" id="y2" value="<?php if(isset($y2)) echo $y2; ?>" />
+        		<input type="hidden" name="w" id="w" value="<?php if(isset($w)) echo $w; ?>" />
+        		<input type="hidden" name="h" id="h" value="<?php if(isset($h)) echo $h; ?>" />
         		<label for="title">Tag text</label><br />
         		<input type="text" id="comment" name="comment" size="30" value="" maxlength="55" /><br />
         		<input type="hidden" name="tag" value="true" />
