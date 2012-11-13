@@ -38,6 +38,7 @@ Credits: jQuery, imgAreaSelect
 <body>
   <div id="site">
     <?php
+    //comment
     //Start jquery popup error checking. (this can removed if needed.
     if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
     	echo "<div id='error-box'><ul class='err'>";
